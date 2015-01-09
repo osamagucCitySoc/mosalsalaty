@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E86F26F01A6041E0003CE4E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E86F26EF1A6041E0003CE4E1 /* main.m */; };
+		E86F26F31A6041E0003CE4E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E86F26F21A6041E0003CE4E1 /* AppDelegate.m */; };
+		E86F26F61A6041E0003CE4E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E86F26F51A6041E0003CE4E1 /* ViewController.m */; };
+		E86F26F91A6041E0003CE4E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86F26F71A6041E0003CE4E1 /* Main.storyboard */; };
+		E86F26FB1A6041E0003CE4E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86F26FA1A6041E0003CE4E1 /* Images.xcassets */; };
+		E86F26FE1A6041E0003CE4E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86F26FC1A6041E0003CE4E1 /* LaunchScreen.xib */; };
+		E86F270A1A6041E0003CE4E1 /* MosalsalatyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E86F27091A6041E0003CE4E1 /* MosalsalatyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E86F27041A6041E0003CE4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E86F26E21A6041E0003CE4E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E86F26E91A6041E0003CE4E1;
+			remoteInfo = Mosalsalaty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E86F26EA1A6041E0003CE4E1 /* Mosalsalaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mosalsalaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86F26EE1A6041E0003CE4E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86F26EF1A6041E0003CE4E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E86F26F11A6041E0003CE4E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E86F26F21A6041E0003CE4E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E86F26F41A6041E0003CE4E1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E86F26F51A6041E0003CE4E1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E86F26F81A6041E0003CE4E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E86F26FA1A6041E0003CE4E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E86F26FD1A6041E0003CE4E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E86F27031A6041E0003CE4E1 /* MosalsalatyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosalsalatyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86F27081A6041E0003CE4E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86F27091A6041E0003CE4E1 /* MosalsalatyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MosalsalatyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E86F26E71A6041E0003CE4E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86F27001A6041E0003CE4E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E86F26E11A6041E0003CE4E1 = {
+			isa = PBXGroup;
+			children = (
+				E86F26EC1A6041E0003CE4E1 /* Mosalsalaty */,
+				E86F27061A6041E0003CE4E1 /* MosalsalatyTests */,
+				E86F26EB1A6041E0003CE4E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E86F26EB1A6041E0003CE4E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E86F26EA1A6041E0003CE4E1 /* Mosalsalaty.app */,
+				E86F27031A6041E0003CE4E1 /* MosalsalatyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E86F26EC1A6041E0003CE4E1 /* Mosalsalaty */ = {
+			isa = PBXGroup;
+			children = (
+				E86F26F11A6041E0003CE4E1 /* AppDelegate.h */,
+				E86F26F21A6041E0003CE4E1 /* AppDelegate.m */,
+				E86F26F41A6041E0003CE4E1 /* ViewController.h */,
+				E86F26F51A6041E0003CE4E1 /* ViewController.m */,
+				E86F26F71A6041E0003CE4E1 /* Main.storyboard */,
+				E86F26FA1A6041E0003CE4E1 /* Images.xcassets */,
+				E86F26FC1A6041E0003CE4E1 /* LaunchScreen.xib */,
+				E86F26ED1A6041E0003CE4E1 /* Supporting Files */,
+			);
+			path = Mosalsalaty;
+			sourceTree = "<group>";
+		};
+		E86F26ED1A6041E0003CE4E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E86F26EE1A6041E0003CE4E1 /* Info.plist */,
+				E86F26EF1A6041E0003CE4E1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E86F27061A6041E0003CE4E1 /* MosalsalatyTests */ = {
+			isa = PBXGroup;
+			children = (
+				E86F27091A6041E0003CE4E1 /* MosalsalatyTests.m */,
+				E86F27071A6041E0003CE4E1 /* Supporting Files */,
+			);
+			path = MosalsalatyTests;
+			sourceTree = "<group>";
+		};
+		E86F27071A6041E0003CE4E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E86F27081A6041E0003CE4E1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E86F26E91A6041E0003CE4E1 /* Mosalsalaty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86F270D1A6041E0003CE4E1 /* Build configuration list for PBXNativeTarget "Mosalsalaty" */;
+			buildPhases = (
+				E86F26E61A6041E0003CE4E1 /* Sources */,
+				E86F26E71A6041E0003CE4E1 /* Frameworks */,
+				E86F26E81A6041E0003CE4E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mosalsalaty;
+			productName = Mosalsalaty;
+			productReference = E86F26EA1A6041E0003CE4E1 /* Mosalsalaty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E86F27021A6041E0003CE4E1 /* MosalsalatyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86F27101A6041E0003CE4E1 /* Build configuration list for PBXNativeTarget "MosalsalatyTests" */;
+			buildPhases = (
+				E86F26FF1A6041E0003CE4E1 /* Sources */,
+				E86F27001A6041E0003CE4E1 /* Frameworks */,
+				E86F27011A6041E0003CE4E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E86F27051A6041E0003CE4E1 /* PBXTargetDependency */,
+			);
+			name = MosalsalatyTests;
+			productName = MosalsalatyTests;
+			productReference = E86F27031A6041E0003CE4E1 /* MosalsalatyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E86F26E21A6041E0003CE4E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Osama Rabie";
+				TargetAttributes = {
+					E86F26E91A6041E0003CE4E1 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					E86F27021A6041E0003CE4E1 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = E86F26E91A6041E0003CE4E1;
+					};
+				};
+			};
+			buildConfigurationList = E86F26E51A6041E0003CE4E1 /* Build configuration list for PBXProject "Mosalsalaty" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E86F26E11A6041E0003CE4E1;
+			productRefGroup = E86F26EB1A6041E0003CE4E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E86F26E91A6041E0003CE4E1 /* Mosalsalaty */,
+				E86F27021A6041E0003CE4E1 /* MosalsalatyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E86F26E81A6041E0003CE4E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86F26F91A6041E0003CE4E1 /* Main.storyboard in Resources */,
+				E86F26FE1A6041E0003CE4E1 /* LaunchScreen.xib in Resources */,
+				E86F26FB1A6041E0003CE4E1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86F27011A6041E0003CE4E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E86F26E61A6041E0003CE4E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86F26F61A6041E0003CE4E1 /* ViewController.m in Sources */,
+				E86F26F31A6041E0003CE4E1 /* AppDelegate.m in Sources */,
+				E86F26F01A6041E0003CE4E1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86F26FF1A6041E0003CE4E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86F270A1A6041E0003CE4E1 /* MosalsalatyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E86F27051A6041E0003CE4E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E86F26E91A6041E0003CE4E1 /* Mosalsalaty */;
+			targetProxy = E86F27041A6041E0003CE4E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E86F26F71A6041E0003CE4E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E86F26F81A6041E0003CE4E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E86F26FC1A6041E0003CE4E1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E86F26FD1A6041E0003CE4E1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E86F270B1A6041E0003CE4E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E86F270C1A6041E0003CE4E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E86F270E1A6041E0003CE4E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mosalsalaty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E86F270F1A6041E0003CE4E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mosalsalaty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E86F27111A6041E0003CE4E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MosalsalatyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mosalsalaty.app/Mosalsalaty";
+			};
+			name = Debug;
+		};
+		E86F27121A6041E0003CE4E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MosalsalatyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mosalsalaty.app/Mosalsalaty";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E86F26E51A6041E0003CE4E1 /* Build configuration list for PBXProject "Mosalsalaty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86F270B1A6041E0003CE4E1 /* Debug */,
+				E86F270C1A6041E0003CE4E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86F270D1A6041E0003CE4E1 /* Build configuration list for PBXNativeTarget "Mosalsalaty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86F270E1A6041E0003CE4E1 /* Debug */,
+				E86F270F1A6041E0003CE4E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E86F27101A6041E0003CE4E1 /* Build configuration list for PBXNativeTarget "MosalsalatyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86F27111A6041E0003CE4E1 /* Debug */,
+				E86F27121A6041E0003CE4E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E86F26E21A6041E0003CE4E1 /* Project object */;
+}
