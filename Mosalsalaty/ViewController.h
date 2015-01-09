@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+@property NSDictionary* ep;
 
 @end
 
