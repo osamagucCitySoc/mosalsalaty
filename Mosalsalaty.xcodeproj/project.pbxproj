@@ -11,6 +11,7 @@
 		E83E2A961A6071B000D7E89E /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E83E2A951A6071B000D7E89E /* AsyncImageView.m */; };
 		E83E2A981A6071EB00D7E89E /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = E83E2A971A6071EB00D7E89E /* loading.png */; };
 		E83E2A9B1A6075DD00D7E89E /* EposidesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E83E2A9A1A6075DD00D7E89E /* EposidesTableViewController.m */; };
+		E83E2A9E1A60F36800D7E89E /* CountryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E83E2A9D1A60F36800D7E89E /* CountryTableViewController.m */; };
 		E86F26F01A6041E0003CE4E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E86F26EF1A6041E0003CE4E1 /* main.m */; };
 		E86F26F31A6041E0003CE4E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E86F26F21A6041E0003CE4E1 /* AppDelegate.m */; };
 		E86F26F61A6041E0003CE4E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E86F26F51A6041E0003CE4E1 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 		E83E2A971A6071EB00D7E89E /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 		E83E2A991A6075DD00D7E89E /* EposidesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EposidesTableViewController.h; sourceTree = "<group>"; };
 		E83E2A9A1A6075DD00D7E89E /* EposidesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EposidesTableViewController.m; sourceTree = "<group>"; };
+		E83E2A9C1A60F36800D7E89E /* CountryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryTableViewController.h; sourceTree = "<group>"; };
+		E83E2A9D1A60F36800D7E89E /* CountryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryTableViewController.m; sourceTree = "<group>"; };
 		E86F26EA1A6041E0003CE4E1 /* Mosalsalaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mosalsalaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86F26EE1A6041E0003CE4E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E86F26EF1A6041E0003CE4E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				E83E2A921A606FF400D7E89E /* SeriesTableViewController.m */,
 				E83E2A991A6075DD00D7E89E /* EposidesTableViewController.h */,
 				E83E2A9A1A6075DD00D7E89E /* EposidesTableViewController.m */,
+				E83E2A9C1A60F36800D7E89E /* CountryTableViewController.h */,
+				E83E2A9D1A60F36800D7E89E /* CountryTableViewController.m */,
 			);
 			path = Mosalsalaty;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				E86F26F61A6041E0003CE4E1 /* ViewController.m in Sources */,
 				E86F26F31A6041E0003CE4E1 /* AppDelegate.m in Sources */,
 				E86F26F01A6041E0003CE4E1 /* main.m in Sources */,
+				E83E2A9E1A60F36800D7E89E /* CountryTableViewController.m in Sources */,
 				E83E2A9B1A6075DD00D7E89E /* EposidesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -354,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -366,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Mosalsalaty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -376,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Mosalsalaty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -7,15 +7,15 @@
 //
 
 #import "SeriesTableViewController.h"
-#import "EposidesTableViewController.h"
+#import "CountryTableViewController.h"
 
-#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define kBgQueueee dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
-@interface SeriesTableViewController ()<NSURLConnectionDataDelegate,NSURLConnectionDelegate>
+@interface CountryTableViewController ()<NSURLConnectionDataDelegate,NSURLConnectionDelegate>
 
 @end
 
-@implementation SeriesTableViewController
+@implementation CountryTableViewController
 {
     NSMutableData* responseData;
     NSMutableArray* dataSource;
@@ -24,10 +24,10 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if([[segue identifier]isEqualToString:@"epSeg"])
+    if([[segue identifier]isEqualToString:@"serSeg"])
     {
-        EposidesTableViewController* dts = (EposidesTableViewController*)[segue destinationViewController];
-        [dts setSeries:[dataSource objectAtIndex:self.tableView.indexPathForSelectedRow.row]];
+        SeriesTableViewController* dts = (SeriesTableViewController*)[segue destinationViewController];
+        [dts setCountry:[dataSource objectAtIndex:self.tableView.indexPathForSelectedRow.row]];
     }
 }
 - (void)viewDidLoad {
@@ -37,24 +37,24 @@
     responseData = [[NSMutableData alloc]init];
     dataSource = [[NSMutableArray alloc]init];
     
-    NSString *post = [NSString stringWithFormat:@"country=%@",[self.country objectForKey:@"id"]];
+    NSString *post = @"";
     
     NSData *postData = [post dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:NO];
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[post length]];
     
-    NSURL *url = [NSURL URLWithString:@"http://osamalogician.com/arabDevs/mosalsalaty/getSeries.php"];
+    NSURL *url = [NSURL URLWithString:@"http://osamalogician.com/arabDevs/mosalsalaty/getCountries.php"];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:90.0];
     [request setHTTPMethod:@"POST"];
     [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
     [request setHTTPBody:postData];
     
-   NSURLConnection* getSeriesConnection = [[NSURLConnection alloc]initWithRequest:request delegate:self    startImmediately:NO];
+    NSURLConnection* getSeriesConnection = [[NSURLConnection alloc]initWithRequest:request delegate:self    startImmediately:NO];
     
     [getSeriesConnection scheduleInRunLoop:[NSRunLoop mainRunLoop]
-                                          forMode:NSDefaultRunLoopMode];
+                                   forMode:NSDefaultRunLoopMode];
     [getSeriesConnection start];
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,10 +74,10 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString* cellID = @"seriesCell";
+    static NSString* cellID = @"countryCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-
-
+    
+    
     if(!cell)
     {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
@@ -86,10 +86,10 @@
     NSDictionary* series = [dataSource objectAtIndex:indexPath.row];
     
     UIImageView* oldImage = (UIImageView*)[ cell.contentView viewWithTag:1];
-
+    
     [oldImage setImage:[UIImage imageNamed:@"loading.png"]];
     
-    dispatch_async(kBgQueue, ^{
+    dispatch_async(kBgQueueee, ^{
         NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[series objectForKey:@"image"]]];
         if (imgData) {
             UIImage *image = [UIImage imageWithData:imgData];
@@ -106,7 +106,7 @@
         }
     });
     
-       
+    
     
     [(UILabel*)[cell viewWithTag:2] setText:[series objectForKey:@"name"]];
     
@@ -116,7 +116,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"epSeg" sender:self];
+    [self performSegueWithIdentifier:@"serSeg" sender:self];
 }
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
@@ -132,7 +132,7 @@
                                                        JSONObjectWithData:responseData
                                                        options:kNilOptions
                                                        error:&error2]];
-
+    
     [self.tableView reloadData];
     [self.tableView setNeedsDisplay];
 }

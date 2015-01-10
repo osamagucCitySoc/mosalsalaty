@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6JF-39-Y24">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -255,12 +256,12 @@
                                 <exclude reference="4Cd-vA-7Ek"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="SlS-TC-bMZ"/>
+                                <exclude reference="YCd-XY-zYS"/>
                                 <exclude reference="9oW-ay-dy4"/>
                                 <exclude reference="qSn-vt-kOw"/>
                                 <exclude reference="skc-O5-Ly4"/>
                                 <exclude reference="rgl-dV-k29"/>
-                                <exclude reference="SlS-TC-bMZ"/>
-                                <exclude reference="YCd-XY-zYS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -269,12 +270,12 @@
                                 <include reference="4Cd-vA-7Ek"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="SlS-TC-bMZ"/>
+                                <include reference="YCd-XY-zYS"/>
                                 <include reference="9oW-ay-dy4"/>
                                 <include reference="qSn-vt-kOw"/>
                                 <include reference="skc-O5-Ly4"/>
                                 <include reference="rgl-dV-k29"/>
-                                <include reference="SlS-TC-bMZ"/>
-                                <include reference="YCd-XY-zYS"/>
                             </mask>
                         </variation>
                     </view>
@@ -299,12 +300,102 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="mKK-hY-OZU" kind="relationship" relationship="rootViewController" id="NL4-CY-Jfo"/>
+                        <segue destination="aJ0-RB-DxL" kind="relationship" relationship="rootViewController" id="MDD-gT-LCo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSD-Mv-gha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-121.5" y="144.75"/>
+            <point key="canvasLocation" x="-796.5" y="144.75"/>
+        </scene>
+        <!--Country-->
+        <scene sceneID="Dsl-p8-9hn">
+            <objects>
+                <tableViewController id="aJ0-RB-DxL" customClass="CountryTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" id="a6X-EZ-woY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="countryCell" rowHeight="75" id="Qlx-Ex-C7e">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qlx-Ex-C7e" id="M2v-9F-BHn">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RC9-KZ-VCD">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="SZV-8S-SZ9">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="EDD-B7-UHW"/>
+                                                <constraint firstAttribute="width" constant="64" id="qbd-n2-Raa"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="qbd-n2-Raa"/>
+                                                    <exclude reference="EDD-B7-UHW"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="qbd-n2-Raa"/>
+                                                    <include reference="EDD-B7-UHW"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="SZV-8S-SZ9" firstAttribute="leading" secondItem="M2v-9F-BHn" secondAttribute="leadingMargin" constant="8" id="YgY-5F-GbW"/>
+                                        <constraint firstItem="RC9-KZ-VCD" firstAttribute="trailing" secondItem="M2v-9F-BHn" secondAttribute="trailingMargin" id="dx0-JS-mez"/>
+                                        <constraint firstAttribute="centerY" secondItem="SZV-8S-SZ9" secondAttribute="centerY" id="eVb-Dw-nuG"/>
+                                        <constraint firstAttribute="centerY" secondItem="RC9-KZ-VCD" secondAttribute="centerY" id="gUx-wp-IjD"/>
+                                        <constraint firstItem="RC9-KZ-VCD" firstAttribute="leading" secondItem="SZV-8S-SZ9" secondAttribute="trailing" constant="8" id="kd0-QC-oE5"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="RC9-KZ-VCD"/>
+                                            <exclude reference="SZV-8S-SZ9"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="gUx-wp-IjD"/>
+                                            <exclude reference="kd0-QC-oE5"/>
+                                            <exclude reference="dx0-JS-mez"/>
+                                            <exclude reference="YgY-5F-GbW"/>
+                                            <exclude reference="eVb-Dw-nuG"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="RC9-KZ-VCD"/>
+                                            <include reference="SZV-8S-SZ9"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="gUx-wp-IjD"/>
+                                            <include reference="kd0-QC-oE5"/>
+                                            <include reference="dx0-JS-mez"/>
+                                            <include reference="YgY-5F-GbW"/>
+                                            <include reference="eVb-Dw-nuG"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aJ0-RB-DxL" id="YUt-q0-iEq"/>
+                            <outlet property="delegate" destination="aJ0-RB-DxL" id="coc-Ky-tcG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Country" id="Vdf-w8-GFa"/>
+                    <connections>
+                        <segue destination="mKK-hY-OZU" kind="push" identifier="serSeg" id="WDX-et-GKP"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L64-XY-8Y0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25.5" y="144.75"/>
         </scene>
     </scenes>
     <resources>

@@ -1,5 +1,5 @@
 //
-//  SeriesTableViewController.h
+//  CountryTableViewController.h
 //  Mosalsalaty
 //
 //  Created by Osama Rabie on 1/10/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SeriesTableViewController : UITableViewController
-
-@property(nonatomic,strong)NSDictionary* country;
+@interface CountryTableViewController : UITableViewController
 
 @end
