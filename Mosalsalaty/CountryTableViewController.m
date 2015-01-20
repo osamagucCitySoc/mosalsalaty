@@ -33,6 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.tableView setSeparatorColor:[UIColor colorWithRed:50.0/255 green:50.0/255 blue:50.0/255 alpha:1.0]];
     
     responseData = [[NSMutableData alloc]init];
     dataSource = [[NSMutableArray alloc]init];
@@ -72,43 +73,26 @@
     return dataSource.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString* cellID = @"countryCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-    
     
     if(!cell)
     {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     
+    cell.backgroundColor = [UIColor colorWithRed:70.0/255 green:70.0/255 blue:70.0/255 alpha:1.0];
+    
     NSDictionary* series = [dataSource objectAtIndex:indexPath.row];
     
-    UIImageView* oldImage = (UIImageView*)[ cell.contentView viewWithTag:1];
+    cell.textLabel.textColor = [UIColor colorWithRed:241.0/255 green:241.0/255 blue:241.0/255 alpha:1.0];
+    cell.textLabel.text = [series objectForKey:@"name"];
     
-    [oldImage setImage:[UIImage imageNamed:@"loading.png"]];
+    UIView *selectBack = [[UIView alloc] init];
+    selectBack.backgroundColor = [UIColor colorWithRed:75.0/255 green:75.0/255 blue:75.0/255 alpha:1.0];
     
-    dispatch_async(kBgQueueee, ^{
-        NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[series objectForKey:@"image"]]];
-        if (imgData) {
-            UIImage *image = [UIImage imageWithData:imgData];
-            if (image) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    UITableViewCell *updateCell = (id)[tableView cellForRowAtIndexPath:indexPath];
-                    if (updateCell)
-                    {
-                        UIImageView* oldImage = (UIImageView*)[ updateCell.contentView viewWithTag:1];
-                        [oldImage setImage:image];
-                    }
-                });
-            }
-        }
-    });
-    
-    
-    
-    [(UILabel*)[cell viewWithTag:2] setText:[series objectForKey:@"name"]];
+    cell.selectedBackgroundView = selectBack;
     
     return cell;
 }

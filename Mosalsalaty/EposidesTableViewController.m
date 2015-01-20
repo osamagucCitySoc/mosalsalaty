@@ -33,6 +33,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.tableView setSeparatorColor:[UIColor colorWithRed:50.0/255 green:50.0/255 blue:50.0/255 alpha:1.0]];
+    
     [self setTitle:[self.series objectForKey:@"name"]];
     
     responseData = [[NSMutableData alloc]init];
@@ -78,17 +80,14 @@
     static NSString* cellID = @"epCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     
-    
     if(!cell)
     {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     
+    cell.backgroundColor = [UIColor colorWithRed:70.0/255 green:70.0/255 blue:70.0/255 alpha:1.0];
+    
     NSDictionary* series = [dataSource objectAtIndex:indexPath.row];
-    
-    UIImageView* oldImage = (UIImageView*)[ cell.contentView viewWithTag:1];
-    
-    [oldImage setImage:[UIImage imageNamed:@"loading.png"]];
     
     dispatch_async(kBgQueuee, ^{
         NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[series objectForKey:@"image"]]];
@@ -101,20 +100,28 @@
                     {
                         UIImageView* oldImage = (UIImageView*)[ updateCell.contentView viewWithTag:1];
                         [oldImage setImage:image];
+                        [(UIImageView*)[cell.contentView viewWithTag:4] setContentMode:UIViewContentModeScaleAspectFit];
                     }
                 });
             }
         }
     });
     
+    [(UIImageView*)[cell.contentView viewWithTag:1] setClipsToBounds:YES];
     
+    [[(UIImageView*)[cell.contentView viewWithTag:1] layer] setBorderWidth:1];
+    [[(UIImageView*)[cell.contentView viewWithTag:1] layer] setBorderColor:[UIColor colorWithRed:199.0/255 green:199.0/255 blue:204.0/255 alpha:1.0].CGColor];
     
     [(UILabel*)[cell viewWithTag:2] setText:[series objectForKey:@"name"]];
     [(UILabel*)[cell viewWithTag:3] setText:[series objectForKey:@"duration"]];
     
+    UIView *selectBack = [[UIView alloc] init];
+    selectBack.backgroundColor = [UIColor colorWithRed:75.0/255 green:75.0/255 blue:75.0/255 alpha:1.0];
+    
+    cell.selectedBackgroundView = selectBack;
+    
     return cell;
 }
-
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
