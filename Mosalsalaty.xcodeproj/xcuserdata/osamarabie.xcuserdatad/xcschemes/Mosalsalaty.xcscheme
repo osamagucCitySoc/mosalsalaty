@@ -13,6 +13,15 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E86F26E91A6041E0003CE4E1"
+            BuildableName = "&#x645;&#x633;&#x644;&#x633;&#x644;&#x627;&#x62a;&#x64a;.app"
+            BlueprintName = "Mosalsalaty"
+            ReferencedContainer = "container:Mosalsalaty.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -23,6 +32,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E86F26E91A6041E0003CE4E1"
+            BuildableName = "&#x645;&#x633;&#x644;&#x633;&#x644;&#x627;&#x62a;&#x64a;.app"
+            BlueprintName = "Mosalsalaty"
+            ReferencedContainer = "container:Mosalsalaty.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -32,6 +50,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E86F26E91A6041E0003CE4E1"
+            BuildableName = "&#x645;&#x633;&#x644;&#x633;&#x644;&#x627;&#x62a;&#x64a;.app"
+            BlueprintName = "Mosalsalaty"
+            ReferencedContainer = "container:Mosalsalaty.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
