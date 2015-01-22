@@ -144,10 +144,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cO-dP-wjq">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Cd-vA-7Ek">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -168,49 +164,47 @@
                                     </mask>
                                 </variation>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zdW-Xa-MoP">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <color key="color" red="1" green="0.03014565537" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="3cO-dP-wjq" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="9oW-ay-dy4"/>
+                            <constraint firstAttribute="centerX" secondItem="zdW-Xa-MoP" secondAttribute="centerX" id="RMo-JY-EkG"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="4Cd-vA-7Ek" secondAttribute="bottom" id="SlS-TC-bMZ"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3cO-dP-wjq" secondAttribute="bottom" id="YCd-XY-zYS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3cO-dP-wjq" secondAttribute="trailing" constant="-16" id="qSn-vt-kOw"/>
+                            <constraint firstAttribute="centerY" secondItem="zdW-Xa-MoP" secondAttribute="centerY" id="ech-XQ-Xgz"/>
                             <constraint firstItem="4Cd-vA-7Ek" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="rgl-dV-k29"/>
-                            <constraint firstItem="3cO-dP-wjq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="skc-O5-Ly4"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="3cO-dP-wjq"/>
                                 <exclude reference="4Cd-vA-7Ek"/>
+                                <exclude reference="zdW-Xa-MoP"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="SlS-TC-bMZ"/>
-                                <exclude reference="YCd-XY-zYS"/>
-                                <exclude reference="9oW-ay-dy4"/>
-                                <exclude reference="qSn-vt-kOw"/>
-                                <exclude reference="skc-O5-Ly4"/>
+                                <exclude reference="RMo-JY-EkG"/>
+                                <exclude reference="ech-XQ-Xgz"/>
                                 <exclude reference="rgl-dV-k29"/>
+                                <exclude reference="SlS-TC-bMZ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="3cO-dP-wjq"/>
                                 <include reference="4Cd-vA-7Ek"/>
+                                <include reference="zdW-Xa-MoP"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="SlS-TC-bMZ"/>
-                                <include reference="YCd-XY-zYS"/>
-                                <include reference="9oW-ay-dy4"/>
-                                <include reference="qSn-vt-kOw"/>
-                                <include reference="skc-O5-Ly4"/>
+                                <include reference="RMo-JY-EkG"/>
+                                <include reference="ech-XQ-Xgz"/>
                                 <include reference="rgl-dV-k29"/>
+                                <include reference="SlS-TC-bMZ"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="epq-dA-hbh"/>
                     <connections>
+                        <outlet property="activity" destination="zdW-Xa-MoP" id="AhP-W5-YYs"/>
                         <outlet property="hiddenWebView" destination="4Cd-vA-7Ek" id="BxA-Hc-aZ7"/>
-                        <outlet property="webView" destination="3cO-dP-wjq" id="zLD-C5-eXR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
